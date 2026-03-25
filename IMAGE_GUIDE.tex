@@ -1,0 +1,68 @@
+% HOW TO ADD IMAGES TO YOUR RESEARCH PAPER
+% ==========================================
+
+% The paper is ready to compile online via Overleaf.com
+% To add images, follow these steps:
+
+% 1. PREPARE YOUR IMAGES
+%    - Screenshot of chatbot interface
+%    - System architecture diagram
+%    - Satellite images sample
+%    - Performance graphs
+%    - Database schema diagram
+
+% 2. UPLOAD TO OVERLEAF
+%    - Go to Overleaf.com and create new project
+%    - Upload this research_paper.tex file
+%    - Upload your image files (JPG, PNG recommended)
+
+% 3. ADD IMAGES TO PAPER
+%    Replace the [section-name] placeholders below:
+
+% EXAMPLE - Section 2: System Architecture
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{architecture_diagram.png}
+\caption{Three-tier system architecture showing presentation layer (Streamlit), 
+business logic (SmartChatbot, IssueClassifier, SatelliteIntegration), 
+and data layer (MySQL).}
+\label{fig:architecture}
+\end{figure}
+
+% EXAMPLE - Section 3: Implementation
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{chatbot_screenshot.png}
+\caption{Main chatbot interface showing user message, AI response with 
+follow-up questions, and tracking ID generation.}
+\label{fig:chatbot_ui}
+\end{figure}
+
+% EXAMPLE - Section 5: Features
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{satellite_samples.png}
+\caption{Sample satellite images from the indexed dataset (697 images, 66.31 MB). 
+Left: satellite view; Right: street-level verification.}
+\label{fig:satellite}
+\end{figure}
+
+% EXAMPLE - Section 4: Results
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{performance_metrics.png}
+\caption{System performance metrics showing average response time (2.3s), 
+Gemini API latency (1.8s), and batch processing times.}
+\label{fig:performance}
+\end{figure}
+
+% TO REFERENCE IMAGES IN TEXT:
+% As shown in Figure \ref{fig:architecture}, the system follows...
+% According to performance data in Figure \ref{fig:performance}...
+
+% NOTES:
+% - Use high-quality images (at least 300 DPI for print)
+% - Keep image file sizes under 5 MB each
+% - Use descriptive captions (50-100 words)
+% - Image format: JPG or PNG (PNG for diagrams with transparency)
+% - Supported image sizes: up to 1920x1080 pixels

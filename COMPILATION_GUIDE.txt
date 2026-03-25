@@ -1,0 +1,161 @@
+RESEARCH PAPER COMPILATION GUIDE
+=================================
+
+FILE: research_paper.tex
+PAGES: 8
+STATUS: Ready to compile
+
+QUICK START (RECOMMENDED - Online)
+==================================
+
+Option 1: Overleaf.com (Best for Beginners)
+--------------------------------------------
+1. Go to: https://www.overleaf.com
+2. Click "New Project" → "Upload Project"
+3. Upload: research_paper.tex
+4. Wait for automatic compilation
+5. Click "PDF" button to download
+
+Option 2: Overleaf.com (Import from GitHub)
+--------------------------------------------
+1. Create GitHub repo with research_paper.tex
+2. Go to Overleaf → "New Project" → "Import from GitHub"
+3. Select repository
+4. Automatic compilation starts
+5. Download PDF
+
+
+LOCAL COMPILATION (Advanced)
+============================
+
+Windows with MiKTeX:
+-------------------
+1. Install MiKTeX: https://miktex.org/download
+2. Open Command Prompt, navigate to folder:
+   cd "c:\Users\admin\OneDrive\Desktop\municipal chatbot"
+3. Run:
+   pdflatex -interaction=nonstopmode research_paper.tex
+4. Run again for references:
+   pdflatex -interaction=nonstopmode research_paper.tex
+5. Output file: research_paper.pdf
+
+Windows with TeX Live:
+---------------------
+1. Install TeX Live: https://tug.org/texlive/
+2. Same commands as MiKTeX above
+
+Mac with MacTeX:
+----------------
+1. Install MacTeX: https://www.tug.org/mactex/
+2. Open Terminal:
+   cd ~/Desktop/municipal\ chatbot
+3. Run: pdflatex research_paper.tex
+4. Run again for bibliography
+
+Linux (Ubuntu/Debian):
+----------------------
+1. Install: sudo apt-get install texlive-full
+2. Navigate: cd ~/municipal-chatbot
+3. Run: pdflatex research_paper.tex
+4. Run again for references
+
+
+CUSTOMIZATION TIPS
+==================
+
+Change Title:
+-------------
+Line 37: \title{\textbf{Your New Title Here}}
+
+Change Author:
+--------------
+Line 38: \author{Your Name\\
+         Your Department}
+
+Add Your Institution:
+---------------------
+Line 39: \date{\today}
+         % Add before \begin{document}:
+         \institution{Your University Name}
+
+Modify Margins:
+---------------
+Line 3: \usepackage[margin=0.75in]{geometry}  % Smaller margins
+        \usepackage[margin=1.5in]{geometry}  % Larger margins
+
+Change Font Size:
+-----------------
+Line 1: \documentclass[12pt,a4paper]{article}  % Larger
+        \documentclass[10pt,a4paper]{article}  % Smaller
+
+
+ADDING IMAGES
+=============
+
+See IMAGE_GUIDE.tex for detailed examples
+
+Quick Example:
+--------------
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{your_image.png}
+\caption{Your image caption here}
+\label{fig:yourlabel}
+\end{figure}
+
+Then reference in text: As seen in Figure \ref{fig:yourlabel}...
+
+
+COMMON ERRORS & FIXES
+====================
+
+Error: "pdflatex: command not found"
+Fix: Install MiKTeX/TeX Live for your OS
+
+Error: "Cannot find file ..."
+Fix: Make sure image files are in same directory as .tex file
+
+Error: "Undefined control sequence"
+Fix: Check for typos in command names or missing backslashes
+
+Error: "Mismatched environment"
+Fix: Ensure every \begin{} has matching \end{}
+
+
+BIBLIOGRAPHY GENERATION
+=======================
+
+If using BibTeX:
+1. Create file: references.bib
+2. Run: pdflatex research_paper.tex
+3. Run: bibtex research_paper
+4. Run: pdflatex research_paper.tex (twice more)
+5. Output: research_paper.pdf with bibliography
+
+
+FINAL CHECKLIST
+===============
+
+[ ] Title page looks correct
+[ ] All sections properly numbered
+[ ] Tables and figures visible
+[ ] Page count = 8 pages
+[ ] No "Undefined reference" warnings
+[ ] PDF generated successfully
+[ ] All images properly placed
+[ ] Hyperlinks working (click URLs)
+[ ] Margins correct
+[ ] Font/spacing consistent
+
+
+HELP & SUPPORT
+==============
+
+Overleaf Support: https://www.overleaf.com/help
+LaTeX Documentation: https://www.latex-project.org/help/
+ShareLaTeX Tutorials: https://www.overleaf.com/learn
+TeXStackExchange: https://tex.stackexchange.com
+
+
+Generated: March 24, 2026
+Next Steps: Upload to Overleaf and compile!

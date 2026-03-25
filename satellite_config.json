@@ -1,0 +1,57 @@
+{
+  "google_maps_api_key": "AIzaSyCZidQ1_lVIG90I4ILv1hAc4GAH_zsoH1E",
+  "gemini_api_key": "AIzaSyBNsIBuGfEwY8UhlU9q5fNkV2n0NRX2pK8",
+  "image_storage": {
+    "satellite_images": "satellite_images",
+    "user_images": "user_images",
+    "detection_results": "detection_results",
+    "satellite_images_path": "satellite images",
+    "user_images_path": "user_images",
+    "detection_results_path": "detection_results"
+  },
+  "satellite_options": {
+    "enabled": true,
+    "provider": "google_maps",
+    "zoom_level": 18,
+    "image_types": ["satellite", "street_view"]
+  },
+  "realtime_imaging": {
+    "enabled": true,
+    "base_path": "satellite images",
+    "auto_index": true,
+    "index_export_path": "satellite_images_index.json",
+    "supported_formats": [".jpg", ".jpeg", ".png", ".bmp", ".tiff"],
+    "streaming": {
+      "enabled": true,
+      "batch_size": 5,
+      "default_interval_seconds": 2.0
+    }
+  },
+  "detection_thresholds": {
+    "garbage_confidence": 0.6,
+    "road_damage_confidence": 0.65,
+    "water_pooling_confidence": 0.6,
+    "vegetation_damage_confidence": 0.55,
+    "verification_match_threshold": 0.7
+  },
+  "verification_rules": {
+    "check_nearby_complaints": true,
+    "nearby_radius_km": 0.5,
+    "confidence_boost_nearby": 0.15,
+    "accept_unconfirmed": true
+  },
+  "monitoring_settings": {
+    "auto_scan_enabled": false,
+    "scan_interval_hours": 24,
+    "max_concurrent_scans": 3
+  },
+  "verification": {
+    "enabled": true,
+    "confidence_threshold": 0.7,
+    "comparison_method": "feature_matching"
+  },
+  "storage": {
+    "db_path": "municipal_services.db",
+    "backup_enabled": true
+  }
+}

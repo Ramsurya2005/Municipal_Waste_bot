@@ -1,0 +1,46 @@
+{
+  "complaints": [
+    {
+      "citizen_id": "CIT202602262230295714",
+      "description": "nvjkndfkjnvkjd",
+      "department": "Public Works",
+      "category": "Pothole",
+      "priority": "low",
+      "location": "jsndnsin",
+      "sentiment": {
+        "label": "neutral",
+        "score": 0.0
+      },
+      "complaint_id": "CMP202602262242261050",
+      "status": "Registered",
+      "created_at": "2026-02-26T22:42:26.971801",
+      "updated_at": "2026-02-26T22:42:26.971801"
+    }
+  ],
+  "property_tax": [],
+  "certificates": [],
+  "trade_licenses": [],
+  "building_plans": [],
+  "water_connections": [],
+  "park_bookings": [],
+  "citizens": [
+    {
+      "name": "Demo Citizen",
+      "phone": "9876543210",
+      "email": "demo@example.com",
+      "address": "123 Main Street, Chennai",
+      "citizen_id": "CIT202602262108314303",
+      "registered_at": "2026-02-26T21:08:31.434721",
+      "updated_at": "2026-02-26T21:08:31.434721"
+    },
+    {
+      "name": "RAM SURYA",
+      "phone": "9148839852",
+      "email": "rs8595@srmist.edu.in",
+      "address": "Address not provided",
+      "citizen_id": "CIT202602262230295714",
+      "registered_at": "2026-02-26T22:30:29.575359",
+      "updated_at": "2026-02-26T22:30:29.575359"
+    }
+  ]
+}
